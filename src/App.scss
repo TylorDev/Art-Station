@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@font-face {
+  font-family: 'IPAMincho';
+  src: url('./assets/IPAMincho\ Regular.woff2') format('woff2'), /* Formato WOFF2 */
+  /* Añade otros formatos de fuente aquí si es necesario */
+}
+
+$color-1: #000000;
+$color-2: #ffffff;
+$color-3:#ff0000c3;
+
+
+*{
+  font-family: "Montserrat", sans-serif;
+
+  color:$color-2;
+  margin: 0;
+}
+
+body{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.conteiner{
+ display: flex;
+ flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+    
+  label{
+    font-family: "Noto Serif JP", serif;
+    font-size: 12vw; /* Tamaño del texto en relación al ancho de la ventana */
+    position: absolute; /* Fija el elemento en la ventana */
+    top: 50%; /* Lo sitúa en la mitad vertical */
+    left: 50%; /* Lo sitúa en la mitad horizontal */
+    transform: translate(-50%, -50%); /* Lo centra exactamente */
+    border: 1px solid red;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+    filter: blur(2px);
+  }
+
+}
+
+.Kaguya{
+  width: 80%;
+  align-self: center;
+
+}
+.header {
+  display: flex;
+  background-color:COLOR;
+  color: $color-2;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1%;
+  padding: 1% 1% 0 1%;
+}
+
+.header {
+  h1 {
+    margin: 0;
+
+  }
+  
+  nav {
+    ul {
+      padding: 0;
+      margin: 0;
+      
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+        
+        a {
+          color: #fff;
+          text-decoration: none;
+          
+          &:hover {
+            color: $color-3; // Suponiendo que $color-3 está definido en otro lugar
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
