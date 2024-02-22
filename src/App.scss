@@ -60,6 +60,7 @@ background:#000000;
       list-style-type: none;
       justify-content: space-around;
       list-style-type: none;
+      font-weight: bold;
       li{
         border-radius: 10px;
         border: none;
@@ -73,11 +74,22 @@ background:#000000;
         cursor: pointer;
       
        }
+
+       .nav-link {
+        text-decoration: none;
+      
+        
+      }
        &:hover{
-        background-color: #ffffff;;
+        background-color: #ffffff;
+
         
         button{
           color: black ;
+        }
+
+        .nav-link{
+          color: #000;
         }
       }
         
@@ -129,6 +141,9 @@ background:#000000;
 }
 
 
-.nav-link {
-  text-decoration: none;
+
+.tabConteiner{
+
+  width: 400px;
+  background-color: black;
 }
