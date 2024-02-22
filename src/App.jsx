@@ -3,7 +3,10 @@ import { Homepage } from "./components/Homepage";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Routes, Route, NavLink } from "react-router-dom";
+import { useState } from "react";
+
 function App() {
+useState(0)
   return (
     <div className="App">
       <Header></Header>
@@ -25,29 +28,29 @@ const Header = () => {
           <li classname="element" >
             <button>CA</button>
           </li>
-          <li classname="element" >
+          <li className="element" >
             <button>CA</button>
           </li>
-          <li classname="element" >
+          <li className="element" >
             <button>CA</button>
           </li>
-          <li classname="element" >
+          <li className="element" >
             <button>CA</button>
           </li>
-          <li classname="element" >
+          <li className="element" >
             <NavLink  className="nav-link" to="/">Home</NavLink>
           </li>
-          <li classname="element" >
+          <li className="element" >
             
             <button>AB</button>
           </li>
-          <li classname="element" >
+          <li className="element" >
             <button>AB</button>
           </li>
-          <li classname="element" >
+          <li className="element" >
             <button>AB</button>
           </li>
-          <li classname="element" >
+          <li className="element" >
             <button>AB</button>
           </li>
         </ul>
