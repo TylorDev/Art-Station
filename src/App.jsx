@@ -2,8 +2,9 @@ import "./App.scss";
 import { Homepage } from "./components/Homepage";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import { Header } from "./Header";
 
 function App() {
 useState(0)
@@ -20,41 +21,4 @@ useState(0)
 }
 
 export default App;
-const Header = () => {
-  return (
-    <header className="header">
-      <nav className="navbarConteiner">
-        <ul className="elements">
-          <li classname="element" >
-            <button>CA</button>
-          </li>
-          <li className="element" >
-            <button>CA</button>
-          </li>
-          <li className="element" >
-            <button>CA</button>
-          </li>
-          <li className="element" >
-            <button>CA</button>
-          </li>
-          <li className="element" >
-            <NavLink  className="nav-link" to="/">Home</NavLink>
-          </li>
-          <li className="element" >
-            
-            <button>AB</button>
-          </li>
-          <li className="element" >
-            <button>AB</button>
-          </li>
-          <li className="element" >
-            <button>AB</button>
-          </li>
-          <li className="element" >
-            <button>AB</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
-};
+

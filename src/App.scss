@@ -10,7 +10,9 @@
 $color-1: #000000;
 $color-2: #ffffff;
 $color-3: #ff0000c3;
-
+$color-4: red;
+$color-6: red
+$color-4: red
 * {
   font-family: "Montserrat", sans-serif;
   color: $color-2;
@@ -252,12 +254,34 @@ body {
 
 .Cover{
   border: 1px solid red;
-  width: 60%;
-  right: -10%;
+  width: 50%;
+  right: 0;
  position: absolute;
-  margin-top: 10%;
-
+  margin-top: 0%;
+z-index: 9999;
 
 
  }
 
+
+ .Name {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  height: 35%;
+  min-height: max-content;
+  padding: 50px 0;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 10px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
+  margin: 2% 2% 0; /* Combina márgenes superior y derecho */
+  right: 0;
+}
