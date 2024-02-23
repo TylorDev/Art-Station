@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { ColiderComp } from "./ColiderComp";
 export const Homepage = () => {
   return (
     <div>
@@ -9,14 +9,30 @@ export const Homepage = () => {
           justifyContent: "center",
           gap: "15px",
           marginTop: "20px",
+
         }}
       >
+        <ColiderComp >
+          <ResizableBox img="https://i.pinimg.com/736x/03/c5/48/03c548bf887b56b15d1c2e6d51e72cc8.jpg"></ResizableBox>
+        </ColiderComp>
 
-        <ResizableBox img="https://i.pinimg.com/564x/24/ca/d4/24cad492a917c37eea7a646a1c08a73d.jpg"></ResizableBox>
-        <ResizableBox img="https://preview.redd.it/a0ez44uhhx911.jpg?auto=webp&s=9f8a86024d45e3a74490d3d004a292a74fa88b8c"></ResizableBox>
+        <ColiderComp >
+          <ResizableBox img="https://i.pinimg.com/564x/b5/0c/d9/b50cd94ee9d9dabbbc0fe0d8aa6f44c7.jpg"></ResizableBox>
+        </ColiderComp>
 
-        <ResizableBox img="https://i.pinimg.com/736x/bf/e6/88/bfe6880b5099c781cd70a8b09e1cbff8.jpg"></ResizableBox>
+        <ColiderComp >
+          <ResizableBox img="https://i.pinimg.com/564x/24/ca/d4/24cad492a917c37eea7a646a1c08a73d.jpg"></ResizableBox>
+        </ColiderComp>
+    
+        <ColiderComp >
+          <ResizableBox img="https://i.pinimg.com/564x/cb/c6/0d/cbc60deb39f7167fd85fac191e4b3071.jpg"></ResizableBox>
+        </ColiderComp>
+  
+    
+
       </div>
+  
+      
     </div>
   );
 };
@@ -24,7 +40,7 @@ export const Homepage = () => {
 function ResizableBox({
   img = "https://i.pinimg.com/236x/f9/27/45/f9274559d9e31514e7d66518b71e9df7.jpg",
 }) {
-  const [width, setWidth] = useState(400); // Ancho inicial del componente
+  const [width, setWidth] = useState(200); // Ancho inicial del componente
   const [isResizing, setIsResizing] = useState(false); // Estado para rastrear si se está arrastrando el manejador
   const [resizeStartX, setResizeStartX] = useState(0); // Posición inicial X del mouse al iniciar la redimensión
   const [isLeft, setIsleft] = useState(false);
@@ -80,24 +96,15 @@ function ResizableBox({
   return (
     <div className="resizable-box" style={{ width: `${width}px` }}>
       <div className="tabConteiner">
-        <div className="tabName">Details -  Detalles</div>
+        <div className="tabName"></div>
         <div className="tabContent">
           <div className="resize-handler left" onMouseDown={startResize} />
-          <img className="image"src={img} alt="" />
+          <img className="image" src={img} alt="" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero facilis perspiciatis esse tenetur voluptates corrupti sunt sint repudiandae, quis itaque aperiam provident vel explicabo consectetur! At eligendi ipsum voluptatem.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+            ipsam velit sint pariatur quidem doloremque, iste icum ducimus
+            laboriosam.
           </p>
-
-          
-          <img className="image"src={img} alt="" />
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero facilis perspiciatis esse tenetur voluptates corrupti sunt sint repudiandae, quis itaque aperiam provident vel explicabo consectetur! At eligendi ipsum voluptatem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facere perspiciatis itaque ratione dolorem, illum maiores corporis quod molestiae aperiam minima deserunt, ducimus aliquam repudiandae, eius sit. Cum, eligendi aliquid?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero facilis perspiciatis esse tenetur voluptates corrupti sunt sint repudiandae, quis itaque aperiam provident vel explicabo consectetur! At eligendi ipsum voluptatem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facere perspiciatis itaque ratione dolorem, illum maiores corporis quod molestiae aperiam minima deserunt, ducimus aliquam repudiandae, eius sit. Cum, eligendi aliquid?
-          </p>
-
           <div className="resize-handler right" onMouseDown={startResize} />
         </div>
       </div>
