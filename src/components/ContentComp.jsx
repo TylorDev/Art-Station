@@ -46,6 +46,12 @@ export function ContentComp({ show }) {
     </p>
 
     <img className="image" src="https://i.pinimg.com/originals/ce/fa/bc/cefabc6aa7bd28cccd0713e4a3656cc9.jpg" alt="" />
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+      ipsam velit sint pariatur quidem doloremque, iste icum ducimus
+      laboriosam.
+    </p>
     
   </div>;
 }

@@ -58,11 +58,11 @@ export function TabComponent({
     <div className="resizable-box" style={{ width: `${width}px` }}>
       <div className="tabConteiner">
         <div className="tabName"></div>
-        <div className="tabContent"  onClick={()=>{setShow(!show)}}>
+        <div className="tabContent"  >
           <div className="resize-handler left" onMouseDown={startResize} />
 
           <ContentComp show={show} />
-
+          <button  style= {{ background :  `linear-gradient(0deg,  #950017 ${show?"10%":"30%"}, rgba(0,0,0,0) 100%)`}}className="readMore" onClick={()=>{setShow(!show)}}>  {show? "Ver menos": "Ver mas"}</button>
           <div className="resize-handler right" onMouseDown={startResize} />
         </div>
       </div>
