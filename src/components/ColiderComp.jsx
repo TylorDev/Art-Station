@@ -1,10 +1,11 @@
 import { useEffect, useState, useRef } from "react";
 
-export const ColiderComp = ({ imgSrc, children}) => {
+export const ColiderComp = ({children}) => {
   const [localPosition, setLocalPosition] = useState({ x: 0, y: 0 });
   const containerRef = useRef(null);
   const imageRef = useRef(1);
   const [isHover, setIshover] = useState(false)
+
   const [ultimaPosicion, setUltimaPosicion] = useState({ x: 200, y: 20});
   useEffect(() => {
     const updateMousePosition = (e) => {
@@ -39,6 +40,7 @@ export const ColiderComp = ({ imgSrc, children}) => {
     };
   }, []);
 
+
   return (
     <div ref={containerRef} className="mainConteiner">
       <div
@@ -50,8 +52,6 @@ export const ColiderComp = ({ imgSrc, children}) => {
             :`translate(${ultimaPosicion.x - imageRef.current.offsetWidth / 2}px, ${ultimaPosicion.y - imageRef.current.offsetHeight / 25}px)`,
       
         }}
-
-        // style={{ transform: `translate(${localPosition.x - imageRef.current.offsetWidth / 2}px, ${localPosition.y - imageRef.current.offsetHeight / 20}px)` }}
       >
         <div className="moveArea"  onMouseEnter={()=>{setIshover(true)}}  onMouseLeave={()=>{setIshover(false)}} onClick={()=>{setIshover(false)}}> 
            

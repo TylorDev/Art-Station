@@ -95,16 +95,20 @@ body {
   height: 80vh;
   min-height: max-content;
   position: relative;
-  margin: 8px;
-  border: 2px solid red;
-  
+
+  border-radius: 15px;
+  transition: background-color 1s;
+  &:hover{
+
+   background-color: #0e0d0d17;
+  }
   .imageConteiner {
     position: absolute;
     display: flex;
     justify-content: center;
     width: fit-content;
     max-width: 100%;
-     transition:  transform 0.25s;
+     transition:  transform 0.15s;
 
 
     // .imageMov {
@@ -120,10 +124,7 @@ body {
       transform: translateY(-30px);
       position: absolute;
       z-index: 400;
-      background-color: rgba(255, 0, 0, 0.346);
-      &:hover{
-         background-color: rgba(255, 255, 255, 0.133);
-      }
+     
  
       }
   }
@@ -147,6 +148,7 @@ body {
   min-width: min-content;
   width: fit-content;
 
+
   .tabConteiner {
     height: 100%;
     width: 100%;
@@ -166,26 +168,15 @@ body {
       flex-direction: column;
       justify-content: start;
       align-items: center;
-    
+      opacity: 0.5;
       width: 100%;
       height: 100%;
       scrollbar-color: #f4f4f4 transparent;
       scrollbar-width: thin;
 
       overflow-y: auto;
-      .image{
-   
-        object-fit: cover;
-        width: 95%;
-        height: 95%;
-        border-radius: 15px;
-        margin-bottom: 5%;
-      }
-
-      p{
-        margin: 30px;
-      }
-
+ 
+  
       .resize-handler {
         width: 2px; /* Ancho del manejador */
         height: 100%;
@@ -211,3 +202,26 @@ body {
 }
 
 
+
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s;
+
+
+
+  .image{
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+  }
+  p{
+    margin: 30px;
+  }
+
+}
