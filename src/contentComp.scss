@@ -1,0 +1,41 @@
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+  
+    .image{
+      object-fit: cover;
+      width: 95%;
+      height: 95%;
+      border-radius: 15px;
+      margin-bottom: 5%;
+  
+    }
+    p{
+      margin: 30px;
+    }
+  
+  }
+  
+  .readMore{
+  
+    background: transparent;
+   
+  
+    transition: all 1s;
+    height: 20%;
+  
+    width: 100%;
+    position: absolute;
+    border: none;
+    bottom: 0;
+  
+    &:hover{
+  
+      font-size: 15px;
+    }
+  
+  }

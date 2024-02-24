@@ -7,12 +7,17 @@
   /* Añade otros formatos de fuente aquí si es necesario */
 }
 
+@import url('./src/tabComp.scss');
+@import url('./src/coliderComp.scss');
+@import url('./src/contentComp.scss');
+@import url('./src/coverComp.scss');
+@import url('./src/headerComp.scss');
 $color-1: #000000;
 $color-2: #ffffff;
 $color-3: #ff0000c3;
 $color-4: red;
-$color-6: red
-$color-4: red
+$color-6: red;
+$color-4: red;
 * {
   font-family: "Montserrat", sans-serif;
   color: $color-2;
@@ -20,8 +25,6 @@ $color-4: red
 }
 
 body {
-  // background-image: url(https://i.pinimg.com/236x/02/07/52/020752b6ee136d98acb542c54bd083f7.jpg);
-  // background-size: auto;
   background: #000000;
 
 }
@@ -33,255 +36,7 @@ body {
   border-radius: 10px;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-
-  .navbarConteiner {
-    background-color: #0e0d0d;
-    width: 50%;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 2%;
-    box-shadow: 0px 7px 0px 0px #4d4d4d;
-
-    .elements {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      list-style-type: none;
-      justify-content: space-around;
-      list-style-type: none;
-      font-weight: bold;
-      li {
-        border-radius: 10px;
-        border: none;
-        background-color: #950017;
-        text-decoration: none;
-        padding: 1%;
-        button {
-          border: none;
-          width: 100%;
-          background-color: transparent;
-          cursor: pointer;
-        }
-
-        .nav-link {
-          text-decoration: none;
-        }
-        &:hover {
-          background-color: #ffffff;
-
-          button {
-            color: black;
-          }
-
-          .nav-link {
-            color: #000;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* Efecto de brillo para el botón "Contacto" */
-.glow {
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de,
-    0 25px 50px rgba(255, 255, 255, 0.2);
-}
-
-.mainConteiner {
-  width:50%;
-  height: 80vh;
-  min-height: max-content;
-  position: relative;
-
-  border-radius: 15px;
-  transition: background-color 1s;
-  border: 1px solid rgb(225, 0, 255);
-  &:hover{
-
-   background-color: #0e0d0d17;
-  }
-  .imageConteiner {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-    max-width: 100%;
-     transition:  transform 0.15s;
-
-
-    // .imageMov {
-    //   border-radius: 5px;
-    //   opacity: 0.8;
-    //   height: 100%;
-    //   object-fit: contain;
-    // }
-      .moveArea{
-
-      width: 100%;
-      height: 25%;
-      transform: translateY(-30px);
-      position: absolute;
-      z-index: 400;
-     
- 
-      }
-  }
-}
-
-.tabName {
-  padding: 0px 15px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border-radius: 15px;
-  width: 15%;
-  border: 5px solid rgb(0, 0, 0);
-  transition: all 1s;
- 
-}
-
-.resizable-box {
-  position: relative;
-  max-width: 100%;
-  max-height: 60vh;
-  min-width: min-content;
-  width: fit-content;
-
-
-  .tabConteiner {
-    height: 100%;
-    width: 100%;
-    min-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #950017;
-    border-radius: 15px;
-
-    overflow: hidden;
-    box-shadow: 0px 15px 0px 0px #0e0d0d, 0px 27px 0px 0px #4d4d4d;
-    .tabContent {
-
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-
-      width: 100%;
-      height: 100%;
-      scrollbar-color: #f4f4f4 transparent;
-      scrollbar-width: thin;
-
-      overflow-y: auto;
-      margin-bottom: 8%;
- 
-  
-      .resize-handler {
-        width: 2px; /* Ancho del manejador */
-        height: 100%;
-
-        position: absolute;
-        right: 0;
-        top: 0;
-        cursor: ew-resize;
-       
-      }
-
-    
-    }
-  }
-}
-
-.tabContent::-webkit-scrollbar-button {
-  background-color: #e7e7e7; /* Color de fondo de la barra de desplazamiento */
-}
-
-.left {
-  left: 0;
-}
-
-
-
-.content{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  transition: all 1s;
 
 
 
 
-  .image{
-    object-fit: cover;
-    width: 95%;
-    height: 95%;
-    border-radius: 15px;
-    margin-bottom: 5%;
-
-  }
-  p{
-    margin: 30px;
-  }
-
-}
-
-.readMore{
-
-  background: transparent;
- 
-
-  transition: all 1s;
-  height: 20%;
-
-  width: 100%;
-  position: absolute;
-  border: none;
-  bottom: 0;
-
-  &:hover{
-
-    font-size: 15px;
-  }
-
-}
-
-.Cover{
-  border: 1px solid red;
-  width: 50%;
-  right: 0;
- position: absolute;
-  margin-top: 0%;
-z-index: 9999;
-
-
- }
-
-
- .Name {
-  display: flex;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  width: 5%;
-  height: 35%;
-  min-height: max-content;
-  padding: 50px 0;
-  border-radius: 15px;
-  background-color: black;
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-  letter-spacing: 10px;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  white-space: nowrap;
-  margin: 2% 2% 0; /* Combina márgenes superior y derecho */
-  right: 0;
-}
