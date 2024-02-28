@@ -1,22 +1,24 @@
 
-.titulo{
-font-size: 2rem;
-font-weight: bold;
-}
+
 .content{
-    width: 100%;
-    height: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    transition: all 1s;
-  
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+ 
+    .titulo{
+      font-size: 2rem;
+      font-weight: bold;
+      }
+      
     .image{
       object-fit: cover;
-      width: 95%;
-      height: 95%;
+      width: 100%;
+      height: 100%;
       border-radius: 15px;
-      margin-bottom: 5%;
+
   
     }
     p{
@@ -24,20 +26,22 @@ font-weight: bold;
     }
   
   }
+
+
+
+
+
   
-  .readMore{
   
-    background: transparent;
-   
-  
-    transition: all 1s;
-    height: 20%;
-  
+  .btn-read{
+
     width: 100%;
-    position: absolute;
-    border: none;
+    height: 80px;
+      border: none;
     bottom: 0;
-  
+    background: linear-gradient(0deg,  #950017 30%, rgba(0,0,0,0) 100%);
+
+    
     &:hover{
   
       font-size: 15px;

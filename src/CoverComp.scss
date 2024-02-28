@@ -1,24 +1,28 @@
+
+.coverContainer{
+  display: grid;
+
+  grid-template-columns: 1fr 0fr;
+
+  align-items: start;
+ justify-content: center;
+
+}
+
 .Cover{
-    border: 1px solid red;
-    width: 50%;
-    right: 0;
-   position: absolute;
-    margin-top: 0%;
-  z-index: 9999;
-  
-  
+    position: sticky;
+    width: 100%;
+    height: auto;
+
+    top: 0;
+    margin: 0;
+    z-index: 9999;
+
    }
   
   
    .Name {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    width: 5%;
-    height: 35%;
-    min-height: max-content;
-    padding: 50px 0;
+    align-self:center ;
     border-radius: 15px;
     background-color: black;
     color: white;
@@ -28,6 +32,13 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     white-space: nowrap;
-    margin: 2% 2% 0; /* Combina márgenes superior y derecho */
+    position: fixed;
+    bottom: 0;
+    top: 0;
     right: 0;
+
+  
   }
+
+
+

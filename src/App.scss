@@ -23,7 +23,8 @@ $color-4: red;
   color: $color-2;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
+
 }
 
 body {
@@ -36,24 +37,25 @@ body {
   height: 250vh;
   margin: 0.6%;
   border-radius: 10px;
+
 }
 
 .container-flex {
+
+  column-count: 3;
+
+  row-gap: 50px;
+  transition: all 1s;
+
+}
+
+.Homepage{
+
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
-  max-width: 50%;
-  align-items: start; /* Alinear el contenido en la parte superior de cada celda */
-  border: 5px solid red;
-  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
 }
 
-
-.cell{
-  border: 5px solid rgb(9, 194, 74);
-
-
-}
 
 
 
