@@ -18,7 +18,7 @@
 
 
     min-width: 100%;
-    max-width: 100px;
+    
 
 
     position: relative;
@@ -28,7 +28,9 @@
 
     margin-bottom: 30px;
     overflow-y: auto;
-    max-height: min-content;
+    overflow-x: hidden;
+
+    max-width: min-content;
     transition: height 1s;
  
   }
