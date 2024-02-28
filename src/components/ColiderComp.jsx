@@ -6,7 +6,7 @@ export const ColiderComp = ({children}) => {
   const imageRef = useRef(1);
   const [isHover, setIshover] = useState(false)
 
-  const [ultimaPosicion, setUltimaPosicion] = useState({ x: 200, y: 20});
+  const [ultimaPosicion, setUltimaPosicion] = useState({ x: 0, y: 0});
   useEffect(() => {
     const updateMousePosition = (e) => {
       const { clientX, clientY } = e;
@@ -44,7 +44,7 @@ export const ColiderComp = ({children}) => {
   return (
     <div ref={containerRef} className="mainConteiner">
       <div
-        className="imageConteiner"
+        className="imageConteiner"  
         ref={imageRef}
         style={{
           transform: isHover
@@ -53,9 +53,9 @@ export const ColiderComp = ({children}) => {
       
         }}
       >
-        <div className="moveArea"  onMouseEnter={()=>{setIshover(true)}}  onMouseLeave={()=>{setIshover(false)}} onClick={()=>{setIshover(false)}}> 
+        <div className="hoverArea"  onMouseEnter={()=>{setIshover(true)}}  onMouseLeave={()=>{setIshover(false)}} onClick={()=>{setIshover(false)}}> 
            
-        </div>
+        </div >
 
         {children}
         

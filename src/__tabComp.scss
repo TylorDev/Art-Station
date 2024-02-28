@@ -9,12 +9,14 @@
    
   }
   
-  .resizable-box {
-    position: relative;
-    max-width: 100%;
-    max-height: 60vh;
-    min-width: min-content;
-    width: fit-content;
+  .tab-box {
+
+    width: 1vw;
+
+    height: 50vh;
+    max-width: 20vw;
+
+ 
   
   
     .tabConteiner {
@@ -27,9 +29,11 @@
       align-items: center;
       background-color: #950017;
       border-radius: 15px;
-  
+      
+
       overflow: hidden;
       box-shadow: 0px 15px 0px 0px #0e0d0d, 0px 27px 0px 0px #4d4d4d;
+      
       .tabContent {
   
         display: flex;
@@ -47,15 +51,17 @@
    
     
         .resize-handler {
-          width: 2px; /* Ancho del manejador */
+          width: 4px; /* Ancho del manejador */
           height: 100%;
-  
+ 
           position: absolute;
           right: 0;
           top: 0;
           cursor: ew-resize;
          
         }
+ 
+    
   
       
       }
@@ -68,4 +74,5 @@
   
   .left {
     left: 0;
+    
   }

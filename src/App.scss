@@ -7,11 +7,11 @@
   /* Añade otros formatos de fuente aquí si es necesario */
 }
 
-@import url('./src/tabComp.scss');
-@import url('./src/coliderComp.scss');
-@import url('./src/contentComp.scss');
-@import url('./src/coverComp.scss');
-@import url('./src/headerComp.scss');
+@import url('./src/__tabComp.scss');
+@import url('./src/__coliderComp.scss');
+@import url('./src/__contentComp.scss');
+@import url('./src/__coverComp.scss');
+@import url('./src/__headerComp.scss');
 $color-1: #000000;
 $color-2: #ffffff;
 $color-3: #ff0000c3;
@@ -26,6 +26,7 @@ $color-4: red;
 
 body {
   background: #000000;
+  height: 50%;
 
 }
 
@@ -36,6 +37,40 @@ body {
   border-radius: 10px;
 }
 
+.HomePage{
+  margin-top: 5%;
+  height: 50%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .Articles{
+      max-width: 50%;
+  } 
+  .Covers{
+    height: 200%;
+
+  }
+}
+
+
+
+  .row1 {
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de tamaño igual */
+  }
+  
+  .row2 {
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño igual */
+  }
+  
+  .column {
+    height: 100%;
+
+  }
 
 
 

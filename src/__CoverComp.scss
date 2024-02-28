@@ -1,0 +1,46 @@
+
+.CoverComp{
+
+  height: 200%;
+  display: grid;
+  display: flex;
+
+}
+
+.Cover{
+  width:50%;
+  position: absolute;
+  opacity: 0.1;
+
+   }
+  
+  
+   .Name {
+    margin-right: 1%;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    width: 2.5rem;
+    background-color: black;
+    height: fit-content;
+    display: flex;
+    justify-content: center;   
+    border-radius: 15px;
+    div{
+ 
+
+      
+      color: white;
+      height: fit-content;
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 10px;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      white-space: nowrap;
+
+
+
+
+    }
+  }

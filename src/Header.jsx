@@ -5,7 +5,7 @@ export const Header = () => {
     <header className="header">
       <nav className="navbarConteiner">
         <ul className="elements">
-          <li classname="element">
+          <li className="element">
             <button><IoSearch /></button>
           </li>
           <li className="element">
