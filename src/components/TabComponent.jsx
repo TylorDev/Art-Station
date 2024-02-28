@@ -55,7 +55,7 @@ export function TabComponent({
   };
   const [show, setShow] = useState(true);
   return (
-    <div className="tab-box" style={{ width: `${width}px` }}>
+    <div className="tab-box" style={{ width: `${width}px`}}>
       <div className="borde left" onMouseDown={startResize} />
       <div className="topButtom">-</div>
       <ContentComp show={show} setShow={setShow} img={img} titulo={titulo} />

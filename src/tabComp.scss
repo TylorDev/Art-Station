@@ -28,8 +28,8 @@
 
     margin-bottom: 30px;
     overflow-y: auto;
-    overflow-x: hidden;
-    max-height: 500px;
+    max-height: min-content;
+    transition: height 1s;
  
   }
   

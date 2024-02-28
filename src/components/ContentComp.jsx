@@ -1,7 +1,7 @@
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export function ContentComp({ show = true, img, titulo="Default Text", setShow }) {
-  return <div className="content">
+  return <div className="content"  >
      <div className="titulo">{titulo}</div>
     <img className="image principal" src={img} alt="" />
     	<p  hidden={show}>	
