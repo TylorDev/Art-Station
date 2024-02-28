@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ContentComp } from "./ContentComp";
 
 export function TabComponent({
-  img = "https://i.pinimg.com/236x/f9/27/45/f9274559d9e31514e7d66518b71e9df7.jpg",
+  img = "https://i.pinimg.com/236x/f9/27/45/f9274559d9e31514e7d66518b71e9df7.jpg", titulo
 }) {
   const [width, setWidth] = useState(200); // Ancho inicial del componente
   const [isResizing, setIsResizing] = useState(false); // Estado para rastrear si se está arrastrando el manejador
@@ -55,17 +55,14 @@ export function TabComponent({
   };
   const[show, setShow] = useState(false);
   return (
-    <div className="resizable-box" style={{ width: `${width}px` }}>
-      <div className="tabConteiner">
-        <div className="tabName"></div>
-        <div className="tabContent"  >
-          <div className="resize-handler left" onMouseDown={startResize} />
-
-          <ContentComp show={show} />
+    <div className="tab-box" style={{ width: `${width}px` }}>
+        <div className="borde left" onMouseDown={startResize} />
+          <div className="topButtom">-</div>
+          <ContentComp show={true} img={img} titulo={titulo} />
+        
           <button  style= {{ background :  `linear-gradient(0deg,  #950017 ${show?"10%":"30%"}, rgba(0,0,0,0) 100%)`}}className="readMore" onClick={()=>{setShow(!show)}}>  {show? "Ver menos": "Ver mas"}</button>
-          <div className="resize-handler right" onMouseDown={startResize} />
-        </div>
-      </div>
+          <div className="borde right" onMouseDown={startResize} />
+    
     </div>
   );
 }

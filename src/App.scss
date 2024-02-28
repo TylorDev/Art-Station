@@ -22,6 +22,8 @@ $color-4: red;
   font-family: "Montserrat", sans-serif;
   color: $color-2;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,7 +38,22 @@ body {
   border-radius: 10px;
 }
 
+.container-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
+  max-width: 50%;
+  align-items: start; /* Alinear el contenido en la parte superior de cada celda */
+  border: 5px solid red;
+  grid-auto-flow: row;
+}
+
+
+.cell{
+  border: 5px solid rgb(9, 194, 74);
+
+
+}
 
 
 
