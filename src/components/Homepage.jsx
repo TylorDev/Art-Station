@@ -16,8 +16,10 @@ export const Homepage = ({darkTheme}) => {
             contenido = {imagen.content}
           ></TabComponent>
         ))}
+
       </div>
-          <CoverComp darkTheme={darkTheme}></CoverComp>
+      <CoverComp darkTheme={darkTheme}></CoverComp>
+   
     </div>
   );
 };

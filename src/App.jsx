@@ -10,7 +10,10 @@ function App() {
   const [darkTheme, setDarkTheme] = useState(false);
  
   return (
-    <div className="App"  theme="dark">
+    <div className="App"  >
+      <div className="Frame">  
+          <div className="Frame inner"></div>
+       </div>
       <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme}></Header>
       <Routes>
         <Route path="/" exact element={<Homepage darkTheme={darkTheme} />} />

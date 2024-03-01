@@ -10,9 +10,8 @@
       --color-3: #000000;
       --color-4: #302835;
       --color-5: #FFFFFF;
-      --coverTransform:  translateX(-15%);    
-      --image:"hola!";       
-     
+      --coverTransform:  translate(0) scale(1.1);    
+      --CoverZ: "1"
 
 }
 
@@ -22,8 +21,9 @@ body[theme="dark"]{
       --color-3: #FFFFFF;
       --color-4: #4D4D4D;
       --color-5: #322E30;
-      --coverTransform:  translateX(0);
-      --image:"Adios!";
+      --coverTransform:  translate(0, 0) scale(1);
+      --CoverZ: "6000";
+
 
 }
 
@@ -36,3 +36,7 @@ $color-4: var(--color-4);
 $color-5: var(--color-5);
 $permanet-color-6: #FFFFFF;
 $coverTransform: var(--coverTransform);
+$cover: (
+  zIndex: var(--CoverZ),
+  transformC: $coverTransform,
+);
