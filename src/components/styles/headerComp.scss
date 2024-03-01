@@ -1,27 +1,24 @@
 
+@import './src/components/styles/colorVar.scss';
+
 .header {
     font-size:1.5rem;
-    outline: 5px solid red;
     display: flex;
     justify-content: center;
 
 
     .list {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       gap: 1.5rem;
-      background-color: #0E0D0D;
-
+      background-color:$color-2;
       height: 3.5rem;
       border-radius: 15px;
       padding-left: 1rem;
       padding-right: 1rem;
-      box-shadow: 0px 10px 0px 0px #4C4C4C;
+      box-shadow: 0px 10px 0px 0px  $color-4;
       margin-bottom: 0.5rem;
-
-
-
       .element{
         list-style: none;
 
@@ -37,19 +34,22 @@
         justify-content: center;
         font-size: inherit;
         border: none;
-        color: white;
-        background-color: #950017;
+        color: $color-3;
+        background-color: $color-1;
+        box-shadow: -3px -3px 0px 1px rgba(0,0,0,0.75) inset;
         cursor: pointer;
-        transition: all 0.3s;
+ 
+        transition: all 0.2s;
+
 
         &:hover{
-          font-size: 2rem ;
-          background-color: #d0001f;
+          outline: 1px solid $color-3;
           box-shadow: -3px -3px 0px 1px rgba(0,0,0,0.75) inset;
         }
         &:active {
-          
-          background-color:  #ff516b
+
+          box-shadow: 5px 5px 0px 1px rgba(0,0,0,0.75) inset;
+          background-color:  $color-1;
       }
 
 

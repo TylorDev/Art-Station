@@ -4,15 +4,16 @@ import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import { Header } from "./Header";
+import { Header } from "./components/Header";
 
 function App() {
-useState(0)
+  const [darkTheme, setDarkTheme] = useState(false);
+ 
   return (
-    <div className="App" >
-      <Header></Header>
+    <div className="App"  theme="dark">
+      <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme}></Header>
       <Routes>
-        <Route path="/" exact element={<Homepage />} />
+        <Route path="/" exact element={<Homepage darkTheme={darkTheme} />} />
         <Route path="/about" exact element={<Contact />} />
         <Route path="/contact" exact element={<About />} />
       </Routes>

@@ -7,17 +7,17 @@
   /* Añade otros formatos de fuente aquí si es necesario */
 }
 
-@import url('./src/tabComp.scss');
-@import url('./src/coliderComp.scss');
-@import url('./src/contentComp.scss');
-@import url('./src/coverComp.scss');
-@import url('./src/headerComp.scss');
-$color-1: #000000;
-$color-2: #ffffff;
-$color-3: #ff0000c3;
-$color-4: red;
-$color-6: red;
-$color-4: red;
+@import './src/components/styles/colorVar.scss';
+
+@import './src/components/styles/tabComp.scss';
+@import './src/components/styles/coliderComp.scss';
+@import './src/components/styles/contentComp.scss';
+@import './src/components/styles/coverComp.scss';
+@import './src/components/styles/headerComp.scss';
+
+
+
+
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -27,22 +27,24 @@ $color-4: red;
 
 }
 
-html{
+:root{
   font-size: 20px;
 
 }
 
 body {
-  background: #000000;
+  background-color:$color-2;
 
 }
 
+
 .App {
-  background: #322e30;
+  background: $color-5;
   height: 250vh;
   margin: 0.6%;
   border-radius: 10px;
   padding: 0;
+  color: $color-3;
 
 }
 

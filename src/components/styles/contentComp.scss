@@ -9,7 +9,7 @@
 
  
     .titulo{
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
       }
       
@@ -18,6 +18,8 @@
       width: 100%;
       height: 100%;
       border-radius: 15px;
+
+    
 
   
     }
@@ -39,7 +41,7 @@
     height: 80px;
       border: none;
     bottom: 0;
-    background: linear-gradient(0deg,  #950017 30%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg,  $color-1 30%, rgba(0,0,0,0) 100%);
 
     
     &:hover{

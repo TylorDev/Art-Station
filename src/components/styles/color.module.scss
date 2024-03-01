@@ -1,0 +1,8 @@
+@import './src/components/styles/colorVar.scss';
+
+/* Define all colours */
+
+// Export the color palette to make it accessible to JS
+:export {
+    color1: $image;
+}

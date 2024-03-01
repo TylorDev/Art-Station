@@ -1,0 +1,38 @@
+// $color-1: #950017;
+// $color-2: #0E0D0D;
+// $color-3: #FFFFFF;
+// $color-4: #4D4D4D;
+// $color-5: #322E30;
+
+:root{
+      --color-1: #BD969C;
+      --color-2: #ED1846;
+      --color-3: #000000;
+      --color-4: #302835;
+      --color-5: #FFFFFF;
+      --coverTransform:  translateX(-15%);    
+      --image:"hola!";       
+     
+
+}
+
+body[theme="dark"]{
+      --color-1: #950017;
+      --color-2: #0E0D0D;
+      --color-3: #FFFFFF;
+      --color-4: #4D4D4D;
+      --color-5: #322E30;
+      --coverTransform:  translateX(0);
+      --image:"Adios!";
+
+}
+
+
+
+$color-1: var(--color-1);
+$color-2: var(--color-2); 
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$permanet-color-6: #FFFFFF;
+$coverTransform: var(--coverTransform);

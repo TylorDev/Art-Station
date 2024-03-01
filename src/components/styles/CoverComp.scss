@@ -10,11 +10,15 @@
 }
 
 .Cover{
+
+
     position: sticky;
     width: 100%;
     height: auto;
-
     top: 0;
+    transform: $coverTransform;
+
+  
     margin: 0;
     z-index: 9999;
 
@@ -24,8 +28,8 @@
    .Name {
     align-self:center ;
     border-radius: 15px;
-    background-color: black;
-    color: white;
+    background-color: $color-2;
+    color:$permanet-color-6;
     font-weight: bold;
     font-size: 25px;
     letter-spacing: 10px;
