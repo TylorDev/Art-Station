@@ -1,4 +1,4 @@
-# Proyecto 1/10!
+# Proyecto N°1/10!
 
 ## Descripción
 Este repositorio contiene  una galería  responsiva de imágenes, usa React Js, Scss! No hace llamadas a API, No tiene footer.
