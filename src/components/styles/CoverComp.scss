@@ -1,6 +1,7 @@
 
 .coverContainer{ 
   position: relative;
+
   width:50vw;
 
   transform: map-get($map: $cover, $key: transformC );
@@ -9,13 +10,17 @@
 .Cover{
     position: sticky;
     width: 100%;
+    min-height: auto;
     top: 0;
+
+
+
    }
   
   
   //  .Name {
-  //   align-self:center ;
-  //   border-radius: 15px;
+    
+  //   border-radius: 0.75rem;
   //   background-color: $color-2;
   //   color:$permanet-color-6;
   //   font-weight: bold;
@@ -24,9 +29,8 @@
   //   writing-mode: vertical-rl;
   //   text-orientation: upright;
   //   white-space: nowrap;
-  //   position: fixed;
-  //   bottom: 0;
-  //   top: 0;
+  //   position: sticky;
+  //   max-height: max-content;
   //   right: 0;
 
   

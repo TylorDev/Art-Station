@@ -2,10 +2,14 @@
 @import './src/components/styles/colorVar.scss';
 
 .header {
-    font-size:1.5rem;
+    font-size:1.5rem; //30px
     display: flex;
     justify-content: center;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 50%;
+   
     z-index: 9999;
  
 
@@ -14,14 +18,14 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      gap: 1.5rem;
+      gap: 0.66em;
       background-color:$color-2;
-      height: 3.5rem;
-      border-radius: 15px;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      box-shadow: 0px 10px 0px 0px  $color-4;
-      margin-bottom: 0.5rem;
+      height: 2.33em;
+      border-radius: 0.5em;
+      padding-left: 0.66em;
+      padding-right: 0.66em;
+      box-shadow: 0em 0.33em 0em 0em $color-4;
+      margin-bottom: 0.33em;
  
       .element{
         list-style: none;
@@ -30,9 +34,9 @@
   
       .btn-icon {
       
-        min-width: 0.5rem;
-        padding: .5rem;
-        border-radius: 9px;
+        min-width: 0.33em;
+        padding: 0.33em;
+        border-radius: 0.33em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,19 +44,20 @@
         border: none;
         color: $color-3;
         background-color: $color-1;
-        box-shadow: -3px -3px 0px 1px rgba(0,0,0,0.75) inset;
+        box-shadow: -0.1em -0.1em 0em 0.033em rgba(0,0,0,0.75) inset;
+
         cursor: pointer;
  
         transition: all 0.2s;
    
 
         &:hover{
-          outline: 1px solid $color-3;
-          box-shadow: -3px -3px 0px 1px rgba(0,0,0,0.75) inset;
+          outline: 0.033em solid $color-3;
+          box-shadow: -0.1em -0.1em 0em 0.033em rgba(0,0,0,0.75) inset;
+
         }
         &:active {
-
-          box-shadow: 5px 5px 0px 1px rgba(0,0,0,0.75) inset;
+          box-shadow: 0.16em 0.16em 0em 0.033em rgba(0,0,0,0.75) inset;
           background-color:  $color-1;
       }
 
@@ -63,4 +68,15 @@
     
     }
   }
+
+  //TABLET
+@media only screen and (max-width: 430px) {
+  .header{
+    top: 92%;
+
+  }
+
+}
   
+
+
