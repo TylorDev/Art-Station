@@ -20,7 +20,7 @@ function App() {
       <div className="App">
       <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme}></Header>
         <Routes>
-          <Route path="/" exact element={<Homepage darkTheme={darkTheme} />} />
+          <Route path="/Art-Station" exact element={<Homepage darkTheme={darkTheme} />} />
           <Route path="/about" exact element={<Contact />} />
           <Route path="/contact" exact element={<About />} />
         </Routes>
