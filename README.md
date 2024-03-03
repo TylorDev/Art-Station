@@ -11,6 +11,5 @@ Este repositorio contiene  una galería  responsiva de imágenes, usa React Js, 
 
 ## Preview
    ![Texto alternativo](desing.webp)
-
-   https://tylordev.github.io/Art-Station/
+   
 ##  [Live Preview](https://tylordev.github.io/Art-Station/)
