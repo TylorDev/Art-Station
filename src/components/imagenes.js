@@ -47,7 +47,7 @@ const japanInfo = [
 export const imagenes = [
   {
     title: "Paisaje en la montaña",
-    imageUrl: "https://i.pinimg.com/236x/a3/89/e8/a389e842a65d11b0cec6e3b6e4fd0341.jpg",content: japanInfo[0].content
+    imageUrl: "./example.webp",content: japanInfo[0].content
   },
   {
     title: "Playa al atardecer",

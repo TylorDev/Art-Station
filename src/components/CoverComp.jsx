@@ -3,7 +3,7 @@
 
 export function CoverComp({darkTheme}) {
   return <div className="coverContainer">
-    <img className="Cover" src={`./src/assets/${darkTheme?"example2.png":"example.png"}`} alt="" />
+    <img className="Cover" src={`./${darkTheme?"example2.webp":"example.webp"}`} alt="" />
 {/* 
     <div className="Name"> 四宮しのみや かぐや </div> */}
     

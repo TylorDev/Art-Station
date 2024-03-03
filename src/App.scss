@@ -1,23 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
-@font-face {
-  font-family: "IPAMincho";
-  src: url("./assets/IPAMincho\ Regular.woff2") format("woff2"); /* Formato WOFF2 */
-  /* Añade otros formatos de fuente aquí si es necesario */
-}
-
-@import './src/components/styles/colorVar.scss';
-
-@import './src/components/styles/tabComp.scss';
-@import './src/components/styles/coliderComp.scss';
-@import './src/components/styles/contentComp.scss';
-@import './src/components/styles/coverComp.scss';
-@import './src/components/styles/headerComp.scss';
-
-
-
-
+@import './src/components/styles/imports.scss';
 
 * {
   font-family: "Montserrat", sans-serif;
